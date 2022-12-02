@@ -1,0 +1,18 @@
+version: "3.1"
+
+services:
+  front-end:
+    image: gdo/front-end
+    container_name: front-end
+    restart: unless-stopped
+    environment:
+      - WDS_SOCKET_PORT=3050
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ./entrypoint.sh
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    ports:
+      - "3001:3000"

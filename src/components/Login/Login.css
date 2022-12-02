@@ -1,0 +1,67 @@
+.login{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.login-popup{
+    background-color: white;
+    margin-top: 200px;
+    width: 30%;
+    height: 400px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-popup-name{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #8369FF 0%, #5293F9 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.login-popup-content{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    width: 80%;
+}
+
+.email-input, .password-input, .login-submit{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.email-input, .password-input{
+    padding: 5px;
+}
+
+.login-submit{
+    margin-top: 20px;
+    background: #31D9DC;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.error-message{
+    color: red;
+    margin: 0px 0px;
+    font-size: 12px;
+}
